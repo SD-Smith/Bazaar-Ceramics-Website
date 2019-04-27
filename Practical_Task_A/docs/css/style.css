@@ -1,0 +1,223 @@
+/*
+======================================
+CSS Styles Page Contents:
+======================================
+
+Global Styles
+Header Styles
+Nav Styles
+Article Styles
+Aside Styles
+
+@media < 501px
+   Global Styles
+   Header Styles
+   Nav Styles
+
+@media > 501px && < 800px
+   Global Styles
+   Header Styles
+   Nav Styles
+
+@media > 801px
+   Global Styles
+   Header Styles
+   Nav Styles
+
+======================================
+Notes:
+======================================
+
+
+Color Pallet with Websafe Alternatives
+
+    #5a0d07 - #660000 = dark red-ish
+    #a19c9c - #999999 = grey-ish 
+    #BC250D - #cc3300 = light red-ish
+    #F9F2EC - #ffffff = beige-ish
+    #f9dc37 - #ffcc33 = gold-ish 
+
+Font-Families with Websafe Alternatives
+
+*/
+
+/* -- Global Style -- */
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* -- Page Section Background Colors -- */
+
+nav {
+    background: #660000;
+}
+            
+article {
+    background: #f9f2ec;
+}
+    
+aside {
+    background: #cc3300;
+}
+    
+footer {
+    background: #ffcc33;
+}
+
+/* -- Nav Style -- */
+
+.nav, .sub-nav-link {
+    color: black;
+}
+
+/* -- Aside Style -- */
+    
+.aside p {
+    color: white;
+}
+
+
+
+@media only screen and (max-width: 500px) {
+
+/* -- Header Styles -- */
+    #pageHeader {
+        background: url(../images/bazaar-logo.jpg) center no-repeat;
+        height: 180px;
+        font-size: 16px;
+    }
+    
+    .material-icons{
+        font-size: 40px;
+    }
+    
+    #menuSlide .material-icons, #searchSlide .close-button {
+        color: white;
+    }
+    
+    #searchSlide input{
+    }
+    
+    #loginModal {
+        font: 1em Georgia, serif;
+        color: black;
+        line-height: 1.5;
+    }
+    
+    #loginModal legend {
+        font-weight: bold;
+    }
+    
+/* -- Nav Styles -- */
+    .nav-tab {
+        font: 2em Georgia, serif;
+        color: white;
+        line-height: 2;   
+    }
+    
+    .dropdown-content {
+        background: white;
+    }
+    .sub-nav-link {
+        font: .75em Georgia, serif;
+        color: black;
+    }
+    
+/* -- Footer -- */
+    #pageFooter ul {
+        font-size: 1.5em;
+        line-height: 1.5
+    }
+}
+@media only screen and (min-width: 501px) and (max-width:980px) {
+/* increased the media max-length to allow the banner sit a little nicer */   
+    
+/* -- Header Styles -- */
+    #pageHeader {
+        background: url(../images/banner.jpg) left no-repeat;
+        height: 296px;
+    }
+    
+    /* -- Nav Styles -- */
+    .nav-tab {
+        font: 1.25em Georgia, serif;
+        color: White;
+    }
+    
+    .dropdown-content{
+        background: white;
+    }
+    
+    .sub-nav-link {
+        font: 1em Georgia, serif;
+        color: black;
+    }
+    
+    /* -- Footer -- */
+    #pageFooter ul {
+        font-size: 1.25em;
+        line-height: 1.5
+    }
+}
+
+@media only screen and (min-width: 981px) and (max-width:1120px) {
+
+/* -- Header Styles -- */
+    
+    #pageHeader {
+        background: #fbf7ee url(../images/banner.jpg) center no-repeat;
+        height: 296px; 
+    }
+    
+    /* -- Nav Styles -- */
+    .nav-tab {
+        font: 2em Georgia, serif;
+        color: White;
+    }
+    
+    .dropdown-content{
+        background: white;
+    }
+    
+    .sub-nav-link {
+        font: .75em Georgia, serif;
+        color: black;
+    }
+    
+    /* -- Footer -- */
+    #pageFooter ul {
+        font-size: 1.5em;
+        line-height: 1.5
+    }
+}
+
+@media only screen and (min-width: 1121px) {
+
+/* -- Header Styles -- */
+
+    #pageHeader {
+        background: #fbf7ee url(../images/banner.jpg) right no-repeat;
+        height: 296px; 
+    }
+/* -- Nav Styles -- */
+    .nav-tab {
+        font: 2em Georgia, serif;
+        color: White;
+    }
+    
+    .dropdown-content{
+        background: white;
+    }
+    
+    .sub-nav-link {
+        font: .75em Georgia, serif;
+        color: black;
+    }
+    
+    /* -- Footer -- */
+    #pageFooter ul {
+        font-size: 1.5em;
+        line-height: 1.5
+    }
+}
