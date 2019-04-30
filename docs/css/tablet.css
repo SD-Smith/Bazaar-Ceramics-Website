@@ -161,6 +161,15 @@ li:focus-within > .dropdown-content {
 
 /* -- Article -- */
 
+#pageArticle p {
+    padding: 0 20px;
+    text-align: justify
+}
+
+#pageArticle {
+    text-align: center
+}
+
 /* -- Aside -- */
 
 .absolute {
@@ -197,6 +206,32 @@ overflow: hidden; /* scroll for mobile devices */
 .aside img {
     width: 100%;
 }
+
+/* -- Email Form -- */
+
+.center {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+}
+
+.center form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    background: rgba(255,255,255,0.5);
+    margin: 10px 0;
+    padding: 5px;
+    border-radius: 5px;
+    width: 95%
+}
+
+.center label {
+    width: 50%
+}
+
 
 /* -- Footer -- */
 
