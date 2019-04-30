@@ -75,11 +75,27 @@ footer {
     
 .aside p {
     color: white;
+    text-decoration: underline;
 }
 
 
 
 @media only screen and (max-width: 500px) {
+
+/* -- General Styles -- */
+    
+    h1 {
+        font-size: 2em;
+    }
+    
+    h2, h3 {
+        font-size: 1.5em;
+    }
+    
+    p {
+        font-size: 1.25em;
+    }
+
 
 /* -- Header Styles -- */
     #pageHeader {
@@ -161,46 +177,16 @@ footer {
     }
 }
 
-@media only screen and (min-width: 981px) and (max-width:1120px) {
+@media only screen and (min-width: 981px) {
 
 /* -- Header Styles -- */
     
     #pageHeader {
-        background: #fbf7ee url(../images/banner.jpg) center no-repeat;
-        height: 296px; 
+        background: #fbf7ee url(../images/banner.jpg) right no-repeat;
+        height: 31%; 
     }
     
     /* -- Nav Styles -- */
-    .nav-tab {
-        font: 2em Georgia, serif;
-        color: White;
-    }
-    
-    .dropdown-content{
-        background: white;
-    }
-    
-    .sub-nav-link {
-        font: .75em Georgia, serif;
-        color: black;
-    }
-    
-    /* -- Footer -- */
-    #pageFooter ul {
-        font-size: 1.5em;
-        line-height: 1.5
-    }
-}
-
-@media only screen and (min-width: 1121px) {
-
-/* -- Header Styles -- */
-
-    #pageHeader {
-        background: #fbf7ee url(../images/banner.jpg) right no-repeat;
-        height: 296px; 
-    }
-/* -- Nav Styles -- */
     .nav-tab {
         font: 2em Georgia, serif;
         color: White;
