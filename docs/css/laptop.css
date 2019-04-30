@@ -24,6 +24,15 @@ ul, li, div, body {
     margin: 0;
     }
 
+h1 {
+    padding-left: 40px;
+}
+
+h2, h3 {
+    padding-left: 20px;
+}
+
+/* -- Frequently Used Classes -- */
 .nav-list {
     text-align: center;
 }
@@ -41,14 +50,10 @@ body {
 
 #pageContainer {
 
-    min-width: 1240px;
-    max-width: 80%;
+    min-width: 1440px;
+    max-width: 90%;
     height: 100vh;
     margin: auto;
-}
-
-header {
-    min-height: 27%;
 }
           
 nav {
@@ -57,26 +62,23 @@ nav {
             
 article {
     float: left;
-    height: 64%;
+    height: 57%;
     width: 70%;
     overflow:auto;
 }
     
 aside {
     float: left;
-    height: 64%;
+    height: 57%;
     width: 30%;
     text-align: center;
-    overflow: auto;
+    overflow: hidden;
 }
     
 footer {
     clear: left;
-    height: 4%;
+    height: 4.5%;
 }
-
-/* @supports () {} */
-
 
 /* -- Header -- */
 
@@ -165,13 +167,21 @@ li:focus-within > .dropdown-content {
 }
 
 /* -- Article -- */
-.article-header {
-float: left;
-width:50%
+
+#pageArticle p, .content img, .article-header img {
+    padding: 0 10px;
+    text-align: justify;
 }
+
+
+.article-header {
+    float: left;
+    width:50%;
+}
+
 .content {
-float: left;
-width:50%
+    float: left;
+    width:50%;
 }
 
 
@@ -183,23 +193,94 @@ display: none;
 
 .text-overlay {
     float: left;
-    width: 50%;
+    width: 44%;
+    background: rgba(0,0,0,.50);
+    padding: 0.38em;
+    margin-top: 0.8em;
+    margin-left: 0.8em;
+    border-radius: 10px
 }
+
 
 .text-overlay img {
     width: 90%;
 }
 
+/* -- Email Form -- */
+
 .center {
     clear: both;
     display: flex;
     justify-content: center;
-    align-items: center;
-    
+    height: 15%;
+    width: 90%;
+    margin: auto;
+}
+
+.center form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    background: rgba(255,255,255,0.5);
+    margin: 10px 0;
+    border-radius: 10px;
+}
+
+.center label {
+    width: 100%;
+    margin-bottom: 20px
 }
 
 /* -- Footer -- */
 
 #pageFooter ul li {
     width: 18%;
+}
+
+@media only screen and (min-width: 801px) and (max-width:1120px) {
+    
+    /* --  page -- */
+    
+    #pageContainer {
+        min-width: 840px;
+        max-width: 100%;
+        height: 100vh;
+        margin: auto;
+    }
+    
+    article {
+        width: 60%;
+    }
+    
+    aside {
+        width: 40%;
+    }
+
+    /* --  article -- */
+    .article-header {
+        float: none;
+        width:100%;
+    }
+    .content {
+        float: none;
+        width:100%;
+    }
+    
+    /* --  aside -- */
+    .text-overlay {
+        width: 41.75%;
+        padding: 0.5em;
+        margin-top: 0.7em;
+        margin-left: 0.7em;
+    }
+
+    .aside p {
+        margin-top: 0%;
+    }
+    
+    .text-overlay img {
+        width: 100%;
+    }
+
 }
