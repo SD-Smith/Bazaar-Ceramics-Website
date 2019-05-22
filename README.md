@@ -32,5 +32,5 @@ Building and testing responsive webpages with HTML and CSS
 ## My Process
 ![alt text][prototypes]
 
-[index.html]: https://github.com/SD-Smith/Bazaar-Ceramics-Website/blob/master/prototypes.jpg
+[prototypes]: https://github.com/SD-Smith/Bazaar-Ceramics-Website/blob/master/prototypes.jpg
 "late stage prototypes drawn in Adobe XD"
