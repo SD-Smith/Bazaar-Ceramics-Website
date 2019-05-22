@@ -6,7 +6,7 @@ Building and testing responsive webpages with HTML and CSS
 [index.html]: https://github.com/SD-Smith/Bazaar-Ceramics-Website/blob/master/index.jpg
 "Bazaar Ceramics Home Page"
 
-## Details
+## Assessment Details
 
 ### Units: 
 * ICTWEB505 Develop complex web page layouts
@@ -28,3 +28,9 @@ Building and testing responsive webpages with HTML and CSS
 ### Assumptions:
 * No SASS / SCSS
 * No Javascript
+
+## My Process
+![alt text][prototypes]
+
+[index.html]: https://github.com/SD-Smith/Bazaar-Ceramics-Website/blob/master/prototypes.jpg
+"late stage prototypes drawn in Adobe XD"
