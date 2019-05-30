@@ -56,16 +56,18 @@ _In addition, the device emulation tools provided by Chrome, Edge and Firefox ha
 
 ### Applying CSS styling through Progressive Enhancement (work in progress..)
 
-Browsers with...
+Browser support for CSS properties:
 
-|least support | some support | full support |
+|strong support | some support | modern |
 |--------------|--------------|--------------|
 | inline-block |   position   |              |
 | float        |   flex       |   grid       |
-| table        |   @media     |   @supports  |
-|   | background-image |    |
+| display table |  min/max   | |
+| vertical-align | calc |  |
+|  | @media  | @supports |
+|  |  |  |
 
-
-1. A single column webpage layout using display: block and float: left/right
-2. A responsive layout for mobile, tablet and laptop screens using flexbox and CSS media queries  
-3. Responsive multi-column layouts using CSS grid and CSS feature queries
+3 layers within CSS Style sheets:
+Layer 1. A single column webpage layout using older CSS, supported by older desktop browsers and stripped mobile browsers
+Layer 2. Addition of responsive CSS (mobile, tablet and laptop) using flexbox and CSS media queries  
+Layer 3. Addition of CSS grid within feature queries
